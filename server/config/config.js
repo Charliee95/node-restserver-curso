@@ -18,7 +18,7 @@ if ( process.env.NODE_ENV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 } else {
     //urlDB = 'mongodb+srv://Charliee95:Trend123@cluster0-wngfn.mongodb.net/cafe'  //Credenciales Visibles
-    urlDB = process.env.MONGO_URI;
+    urlDB = process.env.MONGO_URI; // Ocultar credenciales
 }
 process.env.URLDB = urlDB;
 
